@@ -27,5 +27,5 @@ app.use('/api/v1/stores', require('./routes/stores'));
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () =>
- console.log(`Server is running in ${process.env.NODE_ENV} mode on port ${PORT}`)
+ console.log(`Server is running in ${process.env.NODE_ENV} mode`)
 );

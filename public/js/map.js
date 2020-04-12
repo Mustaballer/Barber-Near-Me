@@ -1,10 +1,9 @@
-mapboxgl.accessToken =
-'pk.eyJ1IjoibXVzMjAwMy1hYmR1bCIsImEiOiJjazh0aHZwYWwwMDlqM250MXNseXhzOTZqIn0.wn4nYNkApTXegqQ0nb2gZQ';
+mapboxgl.accessToken ='pk.eyJ1IjoibXVzMjAwMy1hYmR1bCIsImEiOiJjazh0aHZwYWwwMDlqM250MXNseXhzOTZqIn0.wn4nYNkApTXegqQ0nb2gZQ';
 const map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v11',
-zoom: 9,
-center: [-71.157895, 42.707741]
+zoom: 3,
+center: [-96, 37.8]
 });
 
 // Fetch stores from api

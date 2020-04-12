@@ -4,10 +4,10 @@ const geocoder = require('../utils/geocoder');
 const StoreSchema = new mongoose.Schema({
   storeId: {
     type: String,
-    required: [true, 'Please add a store ID'],
+    required: [true, 'Please add a Barber ID'],
     unique: true,
     trim: true,
-    maxLength: [10, 'Store ID must be less than ten characters']
+    maxLength: [10, 'Barber ID must be less than ten characters']
   },
   address: {
     type: String,

@@ -1,4 +1,4 @@
-# Barber near me
+# Barber Near Me
 
 This is a full stack web app that uses Mapbox as frontend and geocode for the backend to add and display barber locations on a 
 user friendly map. Data that is inputted are the address and the store id which is stored in MongoDB.
@@ -26,3 +26,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Huge props to Traversy Media as learning resources
 * Props to Nayalash for giving idea of barbers
+* Thanks PurpleBooth for readme template

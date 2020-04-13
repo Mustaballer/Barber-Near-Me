@@ -20,7 +20,7 @@ async function getStores() {
       },
       properties: {
         storeId: store.storeId,
-        icon: 'shop'
+        icon: 'square'
       }
     }
   });
@@ -31,24 +31,28 @@ async function getStores() {
 // Load map with stores
 function loadMap(stores) {
   map.on('load', function() {
-    map.addLayer({
-      id: 'points',
-      type: 'symbol',
-      source: {
-        type: 'geojson',
-        data: {
-          type: 'FeatureCollection',
-          features: stores
+    map.loadImage('https://cdn0.iconfinder.com/data/icons/black-logistics-icons/256/Barbershop.png', function(error, image) {
+      if (error) throw error;
+      map.addImage('cat', image);
+      map.addLayer({
+        id: 'points',
+        type: 'symbol',
+        source: {
+          type: 'geojson',
+          data: {
+            type: 'FeatureCollection',
+            features: stores
+          }
+        },
+        layout: {
+          'icon-image': 'cat',
+          'icon-size': 0.1,
+          'text-field': '{storeId}',
+          'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+          'text-offset': [0, 0.9],
+          'text-anchor': 'top'
         }
-      },
-      layout: {
-        'icon-image': '{icon}-15',
-        'icon-size': 1.5,
-        'text-field': '{storeId}',
-        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-        'text-offset': [0, 0.9],
-        'text-anchor': 'top'
-      }
+      });
     });
   });
 }

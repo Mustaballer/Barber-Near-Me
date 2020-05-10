@@ -6,6 +6,8 @@ pressing times.
 
 Click the link here to see the web app: https://barber-near-me.herokuapp.com/
 
+![BarberNearMe Snap](https://i.snipboard.io/ok3Y4O.jpg)
+
 ## Built With
 
 * [Node.js](https://nodejs.org/en/) - JS runtime environment

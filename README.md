@@ -1,7 +1,7 @@
 # Barber Near Me
 
-This is a full stack web app that uses Mapbox as frontend and geocode for the backend to add and display nearby barber locations on a 
-user friendly map. Compared to offical barbershops, non licensed and amateur barbers can add their locations particularly in these 
+This is a full-stack web app that utilizes Mapbox as the frontend and geocode for the backend to add and display nearby barber locations on a 
+user friendly map. Compared to offical barbershops, non-licensed and amateur barbers can add their locations particularly in these 
 pressing times.
 
 Click the link here to see the web app: https://barber-near-me.herokuapp.com/
